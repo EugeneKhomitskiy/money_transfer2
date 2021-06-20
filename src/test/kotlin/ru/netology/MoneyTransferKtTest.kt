@@ -73,6 +73,6 @@ class MoneyTransferKtTest {
 
         val result = commissionRate075(transfer = transfer)
 
-        assertEquals(100.0, result, 0.00)
+        assertEquals(1400.0, result, 0.00)
     }
 }
