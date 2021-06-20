@@ -14,7 +14,7 @@ class MoneyTransferKtTest {
 
         val result = calculate(invoice = invoice, totalTransfer = totalTransfer, transfer = transfer)
 
-        assertEquals(50.0, result, 0.00)
+        assertEquals(550.0, result, 0.00)
     }
 
     @Test
