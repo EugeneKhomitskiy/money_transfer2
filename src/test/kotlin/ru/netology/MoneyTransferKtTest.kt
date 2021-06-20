@@ -1,6 +1,7 @@
 package ru.netology
 
 import org.junit.Test
+
 import org.junit.Assert.*
 
 class MoneyTransferKtTest {
@@ -13,7 +14,7 @@ class MoneyTransferKtTest {
 
         val result = calculate(invoice = invoice, totalTransfer = totalTransfer, transfer = transfer)
 
-        assertEquals(100.0, result, 0.00)
+        assertEquals(50.0, result, 0.00)
     }
 
     @Test
@@ -24,7 +25,7 @@ class MoneyTransferKtTest {
 
         val result = calculate(invoice = invoice, totalTransfer = totalTransfer, transfer = transfer)
 
-        assertEquals(100.0, result, 0.00)
+        assertEquals(35.0, result, 0.00)
     }
 
     @Test
@@ -35,7 +36,7 @@ class MoneyTransferKtTest {
 
         val result = calculate(invoice = invoice, totalTransfer = totalTransfer, transfer = transfer)
 
-        assertEquals(100.0, result, 0.00)
+        assertEquals(0.0, result, 0.00)
     }
 
     @Test
@@ -45,7 +46,7 @@ class MoneyTransferKtTest {
 
         val result = commissionRate06(totalTransfer = totalTransfer, transfer = transfer)
 
-        assertEquals(100.0, result, 0.00)
+        assertEquals(0.0, result, 0.00)
     }
 
     @Test
@@ -55,7 +56,7 @@ class MoneyTransferKtTest {
 
         val result = commissionRate06(totalTransfer = totalTransfer, transfer = transfer)
 
-        assertEquals(100.0, result, 0.00)
+        assertEquals(26.0, result, 0.00)
     }
 
     @Test
@@ -64,7 +65,7 @@ class MoneyTransferKtTest {
 
         val result = commissionRate075(transfer = transfer)
 
-        assertEquals(100.0, result, 0.00)
+        assertEquals(35.0, result, 0.00)
     }
 
     @Test
@@ -73,6 +74,6 @@ class MoneyTransferKtTest {
 
         val result = commissionRate075(transfer = transfer)
 
-        assertEquals(1400.0, result, 0.00)
+        assertEquals(45.0, result, 0.00)
     }
 }
